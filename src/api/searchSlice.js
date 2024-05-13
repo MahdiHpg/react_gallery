@@ -26,14 +26,14 @@ export const fetchImagesBySearch = createAsyncThunk(
     const state = thunkAPI.getState();
     let data;
 
-    console.log("url: ", url);
+    // console.log("url: ", url);
 
     const response = await axios.get(url, {
       headers: { Authorization: apiKey },
     });
 
     data = response.data;
-    console.log("data of fetchImagesBySearch : ", response.data);
+    // console.log("data of fetchImagesBySearch : ", response.data);
     return data;
   }
 );
@@ -85,11 +85,11 @@ const imageSearchedSlice = createSlice({
   reducers: {
     searchAct: (state, action) => {
       state.searchQuery = action.payload;
-      console.log("state.searchQuery : " + state.searchQuery);
+      // console.log("state.searchQuery : " + state.searchQuery);
     },
     isSearchAct: (state, action) => {
       state.isSearchState = action.payload;
-      console.log("state.isSearchState : " + state.isSearchState);
+      // console.log("state.isSearchState : " + state.isSearchState);
     },
   },
   extraReducers: (builder) => {
@@ -104,7 +104,7 @@ const imageSearchedSlice = createSlice({
         }
 
         state.total_results = action.payload.total_results;
-        console.log("state.total_results : " + state.total_results);
+        // console.log("state.total_results : " + state.total_results);
         state.pageNumber = action.payload.page;
         state.searchNextPage = action.payload.next_page;
         state.searchPrevPage = action.payload.prev_page;

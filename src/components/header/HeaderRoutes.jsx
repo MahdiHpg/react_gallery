@@ -15,7 +15,7 @@ const HeaderRoutes = () => {
         PhotoGraphers 📸
       </NavLink>
       <NavLink
-        to={"/"}
+        to={"/react_gallery"}
         className="btn btn-primary"
         style={({ isActive }) => {
           return {

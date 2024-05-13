@@ -40,7 +40,7 @@ export const fetchAllPhotographers = createAsyncThunk(
 
     data = response.data;
 
-    console.log("fetchAllPhotographers : " + data);
+    // console.log("fetchAllPhotographers : " + data);
     return data;
   }
 );
@@ -85,7 +85,7 @@ export const selectPhotographerPics = createSelector(
     const filteredPhotographers = photographers.filter(
       (photographer) => photographer.photographer_id === photographerId
     );
-    console.log("Filtered photographers:", filteredPhotographers);
+    // console.log("Filtered photographers:", filteredPhotographers);
     return filteredPhotographers;
   }
 );

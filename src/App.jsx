@@ -11,7 +11,7 @@ function App() {
       <Header />
       <main className="" style={{ minHeight: "80vh" }}>
         <Routes>
-          <Route path="/" element={<GalleryMain />} />
+          <Route path="/react_gallery" element={<GalleryMain />} />
           <Route path="/photoGraphers" element={<PhotoGrapher />} />
           <Route
             path="/photoGraphers/PhotoGrapherDetails/:photographer_id"

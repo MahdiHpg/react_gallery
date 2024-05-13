@@ -36,7 +36,7 @@ export const fetchImages = createAsyncThunk("fetchImages", async (url) => {
 
   data = response.data;
 
-  console.log(data);
+  // console.log(data);
   return data;
 });
 
