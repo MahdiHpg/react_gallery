@@ -12,13 +12,13 @@ const PhotoGrapherDetails = () => {
 
   const [getPhotosById, setGetPhotosById] = useState([]);
   const [idClicked, setIdClicked] = useState(photographer_id);
-  console.log(idClicked);
+  // console.log(idClicked);
 
   const selectAllPhotographerPics = useSelector(selectAllPhotographers);
-  console.log(
-    "selectAllPhotographerPics data : " +
-      JSON.stringify(selectAllPhotographerPics)
-  );
+  // console.log(
+  //   "selectAllPhotographerPics data : " +
+  //     JSON.stringify(selectAllPhotographerPics)
+  // );
 
   const selectPhotosById = useSelector(selectAllPhotographers);
 

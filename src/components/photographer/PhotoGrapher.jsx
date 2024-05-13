@@ -7,7 +7,7 @@ const PhotoGrapher = () => {
   const AllImages = useSelector(selectAllPhotographers);
   const [getPhotosById, setGetPhotosById] = useState([]);
   const [idClicked, setIdClicked] = useState(null);
-  console.log("idClicked : " + idClicked);
+  // console.log("idClicked : " + idClicked);
 
   const onClickLi = (id) => {
     setIdClicked(id);
@@ -15,7 +15,7 @@ const PhotoGrapher = () => {
       (photo) => photo.photographer_id === id
     );
     setGetPhotosById(photosById);
-    console.log("getPhotosById : " + JSON.stringify(photosById));
+    // console.log("getPhotosById : " + JSON.stringify(photosById));
   };
 
   return (
