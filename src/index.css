@@ -7,8 +7,13 @@
   font-family: "poppins" sans-serif;
 }
 
+ul {
+  padding-right: 0 !important;
+}
+
 .search {
-  height: 40vh;
+  width: 100%;
+  height: auto;
   display: flex;
   position: relative;
   align-items: center;
@@ -38,7 +43,7 @@
 .search .content {
   z-index: 2;
   color: #fff;
-  padding: 0 13px;
+  padding: 20px 13px;
   text-align: center;
   position: relative;
 }
@@ -154,6 +159,9 @@ button {
 .card .details .photographer {
   color: #fff;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
 }
 
@@ -243,4 +251,44 @@ header .buttons i {
   width: 100%;
   object-fit: contain;
   height: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .search h1 {
+    font-size: 1.9rem !important;
+  }
+  .search p {
+    font-size: 1.2rem !important;
+  }
+  .search .search-box {
+    height: 45px !important;
+    font-size: 12px !important;
+  }
+  .search .search-box input {
+    font-size: 14px !important;
+  }
+
+  .images .card .details {
+    bottom: 0 !important;
+  }
+
+  .modal .modal-header {
+    flex-direction: column;
+  }
+  .modalTool {
+    width: 100%;
+    justify-content: space-between !important;
+    order: 1;
+  }
+  .btnClose {
+    float: right;
+  }
+  .btnDownload {
+    float: left;
+  }
+  .modal .modal-header .modal-title {
+    width: 100%;
+    text-align: left;
+    order: 2;
+  }
 }

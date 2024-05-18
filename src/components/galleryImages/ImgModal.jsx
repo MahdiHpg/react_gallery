@@ -29,12 +29,15 @@ const ImgModal = ({ img, handleClose, open }) => {
               @photo by :{" "}
               <span className="text-primary ">{img.photographer}</span>
             </h5>
-            <div className="d-flex flex-row flex-wrap justify-content-start align-items-center ">
-              <button className="btn fs-3 " onClick={downloadImage}>
+            <div
+              className="modalTool d-flex flex-row flex-wrap align-items-center "
+              style={{ justifyContent: "start" }}
+            >
+              <button className="btn btnDownload fs-3 " onClick={downloadImage}>
                 🔗
               </button>
               <button
-                className="btn fs-3 text-secondary "
+                className="btn btnClose fs-3 text-secondary "
                 data-bs-dismiss="modal"
                 aria-label="Close"
                 onClick={handleClose}
